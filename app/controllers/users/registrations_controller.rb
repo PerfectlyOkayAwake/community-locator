@@ -53,8 +53,10 @@ module Users
     private
 
     def check_captcha
-      return if verify_recaptcha
-
+      user = User.new
+      return if verify_recaptcha model: user
+      Logger.log user.errors
+    
       self.resource = resource_class.new user_params
       resource.validate
 
