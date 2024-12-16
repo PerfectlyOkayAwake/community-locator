@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationMailer < ActionMailer::Base
-  default from: 'Simply Always Awake Community Locator <communitylocator@simplyalwaysawake.com>'
+  default from: 'PerfectlyOkay Community Locator <communitylocator@perfectlyokay.org>'
   layout 'bootstrap-mailer'
 
   after_deliver :log_email
