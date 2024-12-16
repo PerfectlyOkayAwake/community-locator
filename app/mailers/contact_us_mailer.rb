@@ -7,7 +7,7 @@ class ContactUsMailer < ApplicationMailer
     @message = message
 
     bootstrap_mail(
-      to: 'communitylocator@simplyalwaysawake.com',
+      to: 'communitylocator@perfectlyokay.org',
       subject: "New message from #{@name}"
     )
   end
