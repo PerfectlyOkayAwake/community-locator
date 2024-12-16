@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
 
     bootstrap_mail(
       to: user.email,
-      subject: 'Your Simply Always Awake Community'
+      subject: 'Your PerfectlyOkay Community'
     )
   end
 
