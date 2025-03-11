@@ -4,7 +4,7 @@ class ApplicationMailer < ActionMailer::Base
   default from: 'PerfectlyOkay Community Locator <communitylocator@perfectlyokay.org>'
   layout 'bootstrap-mailer'
 
-  before_deliver :log_email
+  before_action :log_email
 
   private
 

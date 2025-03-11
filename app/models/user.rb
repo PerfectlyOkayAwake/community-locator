@@ -13,7 +13,7 @@ class User < ApplicationRecord
   before_validation :sanitize_fields
 
   def send_devise_notification(notification, *args)
-    Rails.logger.info("Sending to: #{email}: #{notification}")
+    #Rails.logger.info("Sending to: #{email}: #{notification}")
     super
   end
 
