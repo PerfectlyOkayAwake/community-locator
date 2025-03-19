@@ -7,5 +7,5 @@ class UserOptions < ApplicationRecord
   belongs_to :user
   attribute :community_range, default: 20
   validates :community_range, presence: true,
-                              numericality: { only_integer: true, less_than_or_equal_to: 200 }
+    numericality: { only_integer: true, less_than_or_equal_to: 800 }
 end
